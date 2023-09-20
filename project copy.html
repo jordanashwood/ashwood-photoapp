@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography - My Hobby 📸</title>
+  </head>
+  <style>
+    a {
+      text-decoration: none;
+      font-weight: 900;
+      color: #113f67;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    body {
+      background: linear-gradient(
+        116deg,
+        rgb(231, 234, 246) 0%,
+        rgb(162, 168, 211) 100%
+      );
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      background-color: transparent;
+      border: solid 2px #a2a8d3;
+      color: #113f67;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 600;
+      display: block;
+      margin: 0 auto;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background-color: #a2a8d3;
+      border: solid 2px #a2a8d3;
+      cursor: pointer;
+    }
+    button a:hover {
+      text-decoration: none;
+    }
+    footer {
+      background-color: #113f67;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      margin: 60px 0px 0px 0px;
+      border-radius: 5px;
+    }
+    footer a {
+      color: #a2a8d3;
+    }
+    footer a:hover {
+      color: white;
+    }
+    hr {
+      border: none;
+      background-color: #a2a8d3;
+      margin: 30px;
+      height: 3px;
+      border-radius: 5px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 26px;
+      text-align: center;
+      font-weight: 300;
+      color: #38598b;
+    }
+    img {
+      max-width: 100%;
+    }
+    p {
+      margin-top: 40px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .container {
+      width: 600px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px auto;
+    }
+    .image-gallery {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+    .image-gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+    }
+    .image-gallery img:hover {
+      transform: scale(1.25);
+      box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    }
+    .photography-intro-pic {
+      border-radius: 10px;
+      transition: box-shadow 150ms ease-in-out, 150ms ease-in-out,
+        filter 500ms ease-in-out;
+    }
+    .photography-intro-pic:hover {
+      transform: scale(1.05);
+      filter: brightness(60%);
+      box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    }
+    .theme-button {
+      background-color: #113f67;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+      display: block;
+      margin: 0 auto;
+      transition: all 200ms ease-in-out;
+    }
+    .theme-button:hover {
+      background-color: #a2a8d3;
+      border: none;
+      color: #113f67;
+      cursor: pointer;
+    }
+    .dark {
+      background: linear-gradient(
+        116deg,
+        rgb(11, 45, 74) 0%,
+        rgb(56, 89, 139) 100%
+      );
+      color: #e7eaf6;
+    }
+    .dark a {
+      color: white;
+    }
+    .dark .container {
+      background-color: #38598b;
+    }
+    .dark h2 {
+      color: white;
+    }
+    .dark footer {
+      background-color: rgba(5, 4, 15, 0.3);
+    }
+    .dark .subscribe-button {
+      color: white;
+    }
+    .dark .theme-button {
+      background-color: #a2a8d3;
+      color: #113f67;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+      display: block;
+      margin: 0 auto;
+      transition: all 200ms ease-in-out;
+    }
+    .dark .theme-button:hover {
+      background-color: #e7eaf6;
+      border: none;
+      color: #113f67;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button class="theme-button">CHANGE THEME</button>
+    <div class="container">
+      <h1>Photography</h1>
+      <h2>One of my many hobbies.</h2>
+      <hr />
+      <a href="https://www.instagram.com/jordannmace/" target="_blank">
+        <img
+          class="photography-intro-pic"
+          title="View More on Instagram"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/126/original/IMG_0733.jpg?1689012546"
+        />
+      </a>
+      <div class="image-gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/128/original/IMG_2334.jpg?1689012555"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/129/original/IMG_2348.jpg?1689012564"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/127/original/B0004212-D32F-4D7F-B01B-22E5469DCE22.JPG?1689012551"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/130/original/IMG_9806.jpg?1689012573"
+        />
+      </div>
+      <p>
+        Photography is the art, application, and practice of creating images by
+        recording light, either electronically by means of an image sensor, or
+        chemically by means of a light-sensitive material such as photographic
+        film. It is employed in many fields of science, manufacturing (e.g.,
+        photolithography), and business, as well as its more direct uses for
+        art, film and video production, recreational purposes, hobby, and mass
+        communication.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Photography" target="_blank"
+        >Read More ></a
+      >
+      <button class="subscribe-button">SUBSCRIBE NOW</button>
+    </div>
+    <footer>
+      <p>
+        Coded by
+        <a href="https://www.linkedin.com/in/jordan-ashwood/" target="_blank"
+          >Jordan Ashwood</a
+        >
+      </p>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      function subscribeNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            `Thank you, ${name}! You have been added to our subscription list! 📸`
+          );
+        } else {
+          alert(
+            `Error: You did not enter your name and email. Please try again.`
+          );
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let subscribeButton = document.querySelector(".subscribe-button");
+      subscribeButton.addEventListener("click", subscribeNow);
+    </script>
+  </body>
+</html>
